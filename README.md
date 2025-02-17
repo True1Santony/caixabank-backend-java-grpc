@@ -4,10 +4,27 @@ Category   ➡️   Software
 
 Subcategory   ➡️   Java Backend
 
-Difficulty   ➡️  Medium
+## 🛠 Tecnologías Utilizadas
 
-Average solution time ➡️ 4 hours. The timer will begin when you click the start button and will stop upon your submission. However, this is only a reference metric and does not impact your final score. Focus on delivering a high-quality solution.
+- **Lenguaje de Programación**: Java
+- **Framework**: Spring Boot
+- **Protocolo de Comunicación**:
+  - **REST**: Para intercambio de datos entre clientes y servicios mediante HTTP.
+  - **gRPC**: Para comunicaciones eficientes entre microservicios basadas en Protocol Buffers.
+- **Base de Datos**: MySQL (Dockerizado)
+- **Gestión de Dependencias**: Maven
+- **Contenedores**: Docker (para la base de datos)
 
+---
+
+## 📚 Enlaces a Documentación Relevante
+
+- **Spring Boot**: [Documentación Oficial](https://spring.io/projects/spring-boot)
+- **gRPC**: [Documentación Oficial](https://grpc.io/docs/)
+- **Protocol Buffers**: [Guía de Protocol Buffers](https://developers.google.com/protocol-buffers/docs/overview)
+- **MySQL**: [Documentación Oficial](https://dev.mysql.com/doc/)
+- **Maven**: [Guía de Referencia](https://maven.apache.org/guides/index.html)
+- **Docker**: [Documentación Oficial](https://docs.docker.com/)
 ---
 
 ## 🌐 Background
