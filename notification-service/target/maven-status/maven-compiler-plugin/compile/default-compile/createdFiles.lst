@@ -1,0 +1,9 @@
+io\nuwe\technical\api\ServletInitializer.class
+io\nuwe\technical\api\grpc\NotificationProtoService.class
+io\nuwe\technical\api\repositories\NotificationRepository.class
+io\nuwe\technical\api\entities\Notification.class
+io\nuwe\technical\api\controllers\NotificationController.class
+io\nuwe\technical\api\JacksonConfiguration.class
+io\nuwe\technical\api\services\NotificationService.class
+io\nuwe\technical\api\grpc\GrpcClientService.class
+io\nuwe\technical\api\APIConfig.class

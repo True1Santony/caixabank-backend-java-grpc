@@ -1,0 +1,58 @@
+// user.proto
+syntax = "proto3";
+
+option java_package = "io.nuwe.technical.api.lib";
+option java_outer_classname = "UserProto";
+
+package userproto;
+
+// TODO: TASK 1
+
+// Request payload
+message UserRequest {
+    int64 id = 1; // User ID
+}
+
+// Response payload
+message UserResponse {
+    int64 id = 1;          // User ID
+    string name = 2;       // User Name
+    string email = 3;      // User Email
+    int32 age = 4;         // User age
+    bool is_subscribed = 5; // User suscribed
+}
+
+// Request payload para crear un nuevo usuario
+message CreateUserRequest {
+    string name = 1;       // User Name
+    string email = 2;      // User Email
+    int32 age = 3;         // User age
+}
+
+// Response payload después de crear un usuario
+message CreateUserResponse {
+    int64 id = 1;          // User ID asignado
+}
+
+// Request payload para eliminar un usuario
+message DeleteUserRequest {
+    int64 id = 1; // User ID to delete
+}
+// Response payload después de intentar eliminar un usuario
+message DeleteUserResponse {
+    bool success = 1;      // Indica si la eliminación fue exitosa
+    string message = 2;    // Mensaje que indica si el usuario fue encontrado y eliminado o no
+}
+
+
+// Servicio gRPC para gestionar usuarios
+service UserService {
+    // Método para obtener un usuario por su ID
+    rpc getUser (UserRequest) returns (UserResponse);
+
+    // Método para crear un nuevo usuario
+    rpc createUser (CreateUserRequest) returns (CreateUserResponse);
+
+    // Método para eliminar un usuario por su ID
+    rpc deleteUser (DeleteUserRequest) returns (DeleteUserResponse);
+}
