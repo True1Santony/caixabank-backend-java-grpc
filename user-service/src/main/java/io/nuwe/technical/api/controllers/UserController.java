@@ -1,21 +1,16 @@
 package io.nuwe.technical.api.controllers;
 
 import io.nuwe.technical.api.entities.*;
-import io.nuwe.technical.api.grpc.UserProtoService;
-import io.nuwe.technical.api.lib.UserProto;
 import io.nuwe.technical.api.services.*;
 import io.nuwe.technical.api.grpc.GrpcClientService;
 
 import java.util.List;
-import java.util.ArrayList;
 import java.util.Optional;
-import java.util.Random;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-import reactor.core.publisher.Mono;
 
 @RestController
 public class UserController {
